@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.20827.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefExtensions", "MefExtensions\MefExtensions.csproj", "{2F53C5B6-0ED3-4ECD-8506-2A7ECE48695E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefExtensions.Tests", "MefExtensions.Tests\MefExtensions.Tests.csproj", "{189E1E11-1EC7-4F14-BFC1-7BF09E528F27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2F53C5B6-0ED3-4ECD-8506-2A7ECE48695E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F53C5B6-0ED3-4ECD-8506-2A7ECE48695E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F53C5B6-0ED3-4ECD-8506-2A7ECE48695E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189E1E11-1EC7-4F14-BFC1-7BF09E528F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189E1E11-1EC7-4F14-BFC1-7BF09E528F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189E1E11-1EC7-4F14-BFC1-7BF09E528F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189E1E11-1EC7-4F14-BFC1-7BF09E528F27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

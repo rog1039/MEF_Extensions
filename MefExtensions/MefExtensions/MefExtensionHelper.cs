@@ -27,26 +27,6 @@ namespace MefExtensions
                     attribute);
 
             return re.AsEnumerable();
-
-            //foreach (var composablePartDefinition in container.Catalog.Parts)
-            //{
-            //    foreach (var exportDefinition in composablePartDefinition.ExportDefinitions)
-            //    {
-            //        if (exportDefinition.ContractName == typeof(TtoExport).FullName)
-            //        {
-            //            var attribute = GetAttribute<TtoExport, Tmetadata>(exportDefinition);
-
-            //            if (attribute == null)
-            //                yield break;
-
-            //            if (predicate(attribute))
-            //                yield return new Lazy<TtoExport, Tmetadata>(
-            //                    () =>
-            //                        (TtoExport) composablePartDefinition.CreatePart().GetExportedValue(exportDefinition),
-            //                    attribute);
-            //        }
-            //    }
-            //}
         }
 
         public static IEnumerable<LazyFactory<TtoExport, Tmetadata>> GetExportFactories<TtoExport, Tmetadata>(
@@ -67,27 +47,6 @@ namespace MefExtensions
                     attribute);
 
             return re.AsEnumerable();
-
-
-            //foreach (var composablePartDefinition in container.Catalog.Parts)
-            //{
-            //    foreach (var exportDefinition in composablePartDefinition.ExportDefinitions)
-            //    {
-            //        if (exportDefinition.ContractName == typeof(TtoExport).FullName)
-            //        {
-            //            var attribute = GetAttribute<TtoExport, Tmetadata>(exportDefinition);
-
-            //            if (attribute == null)
-            //                yield break;
-
-            //            if (predicate(attribute))
-            //                yield return new LazyFactory<TtoExport, Tmetadata>(
-            //                    () =>
-            //                        (TtoExport) composablePartDefinition.CreatePart().GetExportedValue(exportDefinition),
-            //                    attribute);
-            //        }
-            //    }
-            //}
         }
 
         public static IEnumerable<TtoExport> GetExportValues<TtoExport, Tmetadata>(
@@ -105,24 +64,6 @@ namespace MefExtensions
                 select (TtoExport) cpd.CreatePart().GetExportedValue(ed);
 
             return re.AsEnumerable();
-
-            //foreach (var composablePartDefinition in container.Catalog.Parts)
-            //{
-            //    foreach (var exportDefinition in composablePartDefinition.ExportDefinitions)
-            //    {
-            //        if (exportDefinition.ContractName == typeof(TtoExport).FullName)
-            //        {
-            //            var attribute = GetAttribute<TtoExport, Tmetadata>(exportDefinition);
-
-            //            if (attribute == null)
-            //                yield break;
-
-            //            if (predicate(attribute))
-            //                yield return
-            //                    (TtoExport) composablePartDefinition.CreatePart().GetExportedValue(exportDefinition);
-            //        }
-            //    }
-            //}
         }
 
         /// <summary>
