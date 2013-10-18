@@ -113,6 +113,7 @@ namespace MefExtensions.Tests
             Assert.NotNull(myBObjects.First().Create());
             Assert.NotNull(myBObjects.First().Create());
 
+            //A change.
         }
     }
 
@@ -122,7 +123,7 @@ namespace MefExtensions.Tests
     }
 
     [MetadataAttribute]
-    public class MyMetadataAttribute : InheritedExportAttribute
+    public class MyMetadataAttribute : ExportAttribute
     {
         public MyMetadataAttribute()
             : base(typeof(MyObjectBaseClass)) 
