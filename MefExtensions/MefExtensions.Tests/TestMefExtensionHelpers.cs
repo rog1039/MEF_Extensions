@@ -113,6 +113,7 @@ namespace MefExtensions.Tests
             Assert.NotNull(myBObjects.First().Create());
             Assert.NotNull(myBObjects.First().Create());
 
+            //A different change.
         }
     }
 
